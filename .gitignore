@@ -1,0 +1,32 @@
+# Dependencies & runtimes
+node_modules/
+.npm/
+.pnpm-store/
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors & Termux / Android artifacts
+*.swp
+*.swo
+*~
+.viminfo
+.bash_history
+.zsh_history
+*.bak
+.DS_Store
+Thumbs.db
+
+# Logs, caches & local env/test outputs
+*.log
+npm-debug.log*
+.cache/
+.tmp/
+.temp/
+*.tmp
+coverage/
+dist/
+build/
+.env
+.env.*
+!.env.example
