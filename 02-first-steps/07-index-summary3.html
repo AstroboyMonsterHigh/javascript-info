@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Uppercase const?</title>
+        <!--
+        https://javascript.info/variables
+        -->
+        <style>
+            code {
+                background-color: #eee;
+                font-family: Monospace, cursive;
+                font-size: .8rem;
+                padding: .15rem .35rem;
+                border-radius: 5px;
+            }
+            
+            pre {
+                background-color: #eee;
+                border-radius: 5px;
+                border-left: 3px solid #6e7781;
+                max-width: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Uppercase const?</h1>
+        <p>Here we have a constant <code>birthday</code> for the date, and also the <code>age</code> constant.</p>
+
+        <pre><code>
+            const birthday = '18.04.1982';
+            
+            const age = someCode(birthday);
+            </code></pre>
+            
+        <p>The <code>age</code> is calculated from <code>birthday</code> using <code>someCode()</code>, which means a function call that we didn’t explain yet (we will soon!), but the details don’t matter here, the point is that <code>age</code> is calculated somehow based on the <code>birthday</code>.</p>
+        <p>Would it be right to use upper case for <code>birthday</code>? For <code>age</code> ? Or even for both?</p>
+        
+            <pre><code>
+            const BIRTHDAY = '18.04.1982';
+            
+            const AGE = someCode(BIRTHDAY);
+            </code></pre>
+            
+            <p><b>Answer</b>:
+            <br>
+            Uppercase would work better for constants. Values that vary should be lower case.</p>
+    </body>
+</html>
